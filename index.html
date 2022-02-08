@@ -14,7 +14,7 @@
         </div>
         <div class="inputs-container">
             <div class="inputs-container_rows">
-                <input type="number" class="inputs" max=9 min=0 id="input-row">
+                <input type="number" class="inputs" max=9 min=0 id="input-row" maxlength="1">
                 <h3>Rows</h3>
             </div>
             <div class="inputs-container_columns">
@@ -23,12 +23,11 @@
             </div>
         </div>
         <div class="btn-container">
-            <button id="btn" onclick="createTable()">Create Table</button>
+            <button id="btn" onclick="createTable()" class="btn-create">Create Table</button>
+            <button id="btn-res" onclick="resetTable()" class="btn-reset">Reset Table</button>
         </div>
         <div class="table-container">
-            <table border="1" id="table">
-
-            </table>
+            <table border="1" id="table"></table>
         </div>
     </main>
 
