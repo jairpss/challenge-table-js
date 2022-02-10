@@ -1,10 +1,10 @@
 let table = document.getElementById('table')
-let rowElement = document.getElementById('input-row')
-let columnElement = document.getElementById('input-column')
+let rowEl = document.getElementById('input-row')
+let columnEl = document.getElementById('input-column')
 
 function isValid() {
-    let row = rowElement.value
-    let column = columnElement.value
+    let row = rowEl.value
+    let column = columnEl.value
 
     if(row.length || column.length == 0){
         alert('Number of rows/columns cannot be empty')
@@ -24,8 +24,8 @@ function isValid() {
 }
 
 function createTable(){
-    let row = rowElement.value
-    let column = columnElement.value
+    let row = rowEl.value
+    let column = columnEl.value
 
     if(isValid(row))
     {
